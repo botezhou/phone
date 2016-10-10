@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+	<link rel="stylesheet" href="index.css">
+	<style>
+		
+		.banner  ul{width: 16rem;}
+		.banner  ul li{float:left;border-left:1px solid #dcdcdc;border-bottom:1px solid #dcdcdc;width:4rem;height:2rem;text-align: center;line-height: 2rem;box-sizing:border-box;}
+		.banner ul li:nth-child(1){border-left:none;}
+		.banner ul li a{font-size: 0.5rem;text-decoration: none;color:#b2b2b2;}
+		.banner2{padding:0.6rem 0;width: 16rem;height:4.1rem;border-bottom: 1px solid #dcdcdc;}
+		.banner2 ul li .div1{width: 6rem;height:4rem;border:1px solid #dcdcdc;text-align: center;line-height: 4rem;float:left;margin-left: 0.5rem;}
+		.banner2 ul li .div1 img{width: 5.65em;height:3.575rem;margin-top: 0.2rem;}
+		.banner2 ul li .div2{width: 7.5rem;height:4rem;float:left;margin-left: 0.5rem;}
+		.banner2 ul li .div2 p{font-size: 0.625rem;}
+		.banner2 ul li .div2 .p1 span{color:red;}
+		.banner2 ul li .div2 .p2{color:red;margin:0.5rem 0;}
+		.banner2 ul li .div2 .p2 .s1{color:red;font-size:0.75rem; }
+		.banner2 ul li .div2 .p2 .s2{color:#dcdcdc;text-decoration: line-through;}
+		.banner2 ul li .div2 .p3{color:#dcdcdc;}
+		.banner21 ul li .div2 .p3{width:2rem;height:0.75rem;background: #ee8800;color:#fff;font-weight: bold;}
+	</style>
+	<script>
+		;(function(win,doc){
+			var rem=20/320*doc.documentElement.clientWidth;
+			doc.documentElement.style.fontSize=rem+'px';
+			win.onresize=function(){
+				rem=20/320*doc.documentElement.clientWidth;
+				doc.documentElement.style.fontSize=rem+'px';
+			}
+		})(window,document);
+	</script>
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<a href="javascript:;" class="a1"></a>
+			<span>品牌团</span>
+			
+		</header>
+		<section class="banner">
+			<ul class="clearfix">
+				<li><a href="javascript" style="color:red">商品</a></li>
+				<li><a href="javascript">生活</a></li>
+				<li><a href="javascript">品牌</a></li>
+				<li><a href="javascript">聚宝盆</a></li>
+			</ul>
+		</section>
+		<section class="banner2">
+			<ul>
+				<li>
+					<div class="div1"><img src="img/19.png" alt=""></div>
+					<div class="div2">
+						<p class="p1"><span>1.2折</span>新田园,林下散养草鸡蛋40枚 纯天然无污</p>
+						<p class="p2">￥<span class="s1">51</span>.00  <span class="s2">￥96.00</span></p>
+						<p class="p3">1240 人已购买</p>
+					</div>
+				</li>				
+			</ul>
+		</section>
+		<section class="banner2 banner21">
+			<ul>
+				<li>
+					<div class="div1"><img src="img/20.png" alt=""></div>
+					<div class="div2">
+						<p class="p1"><span>1.2折</span>最美新娘婚纱套餐:共十二套服装变换美丽身姿</p>
+						<p class="p2">￥<span class="s1">51</span>.00  <span class="s2">￥96.00</span></p>
+						<p class="p3">预下单</p>
+					</div>
+				</li>				
+			</ul>
+		</section>
+		<section class="banner2">
+			<ul>
+				<li>
+					<div class="div1"><img src="img/21.png" alt=""></div>
+					<div class="div2">
+						<p class="p1"><span>1.2折</span>新田园,林下散养草鸡蛋40枚 纯天然无污</p>
+						<p class="p2">￥<span class="s1">51</span>.00  <span class="s2">￥96.00</span></p>
+						<p class="p3">1240 人已购买</p>
+					</div>
+				</li>				
+			</ul>
+		</section>
+		<section class="banner2">
+			<ul>
+				<li>
+					<div class="div1"><img src="img/22.png" alt=""></div>
+					<div class="div2">
+						<p class="p1"><span>1.2折</span>新田园,林下散养草鸡蛋40枚 纯天然无污</p>
+						<p class="p2">￥<span class="s1">51</span>.00  <span class="s2">￥96.00</span></p>
+						<p class="p3">1240 人已购买</p>
+					</div>
+				</li>				
+			</ul>
+		</section>
+	</div>
+</body>
+</html>

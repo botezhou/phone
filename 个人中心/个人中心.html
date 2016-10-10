@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+	<style>
+		*{margin: 0;padding: 0;list-style: none;}
+		html{font-size: 20px;}
+		.fl{ float:left; }
+		.fr{ float:right; }
+		.clear{ clear:both;}
+		.clearfix:after{ content:""; display:block; clear:both; }
+		.clearfix{ zoom:1; }
+		.wrap{width: 18.75rem;background:#ececf4;}
+		.top{width: 18.75rem;background: #fff;text-align: center;font-size: 0.8rem;padding:0.625rem 0;position:relative;}
+		.top span{position:absolute;left:0.4rem;top:0.625rem;}
+		.tx{width: 18.75rem;padding:0.75rem 0;text-align: center;}
+		.tx img{width:18.75rem;height:5.5rem;}
+		.banner ul{width: 18.05em;padding:0.25rem 0.35rem;background: #fff;}
+		.banner ul li{float:left;padding:0.25rem 1.375rem;text-align: center;border-left:1px solid #ccc;}
+		.banner ul li:nth-child(1){border-left:none;}
+		.banner ul li img{width: 0.825rem;height:0.925rem;}
+		.banner ul li a{font-size: 0.625rem;margin-left: 0.625rem;text-decoration: none;color:#000;}
+		.banner2{background: #fff;margin-top: 0.5rem;}
+		.banner2 p{width:17.75rem;height:1.625rem;margin-left:0.35rem;line-height: 1.625rem;background: #fff;border-bottom: 1px solid #ccc;}
+
+		.banner2 p a{font-size: 0.625rem;margin-left: 0.5rem;text-decoration: none;color:#585858;}
+		.banner2 p span{color:#a9a9a9;font-weight: bold;}
+		.banner2 p img{width:2rem;height:1.05rem;margin-top:0.3rem;}
+		.banner3{margin:0.9rem 0;}
+		.banner3 p{border-bottom: none;}
+		.foot{width: 18.75rem;height:2.4rem;background: #fff;margin-top: 4.7rem;border-top:5px solid #ccc;}
+		.foot ul li{float:left;font-size: 0.5rem;color:#666;text-align: center;width:4.65rem;height:2.4rem;margin-top: 0.5rem;}
+		.foot ul li img{width: 1.01rem;height:1.1rem;}
+	</style>
+	<script>
+		;(function(win,doc){
+			var rem=20/375*doc.documentElement.clientWidth;
+			doc.documentElement.style.fontSize=rem+'px';
+			window.onresize=function(){
+				rem=20/375*doc.documentElement.clientWidth;
+				doc.documentElement.style.fontSize=rem+'px';
+			}
+		})(window,document);
+	</script>
+</head>
+
+<body>
+	<div class="wrap">
+		<header class="top">
+			<span>< 返回</span>
+			个人中心
+		</header>
+		<section class="tx">
+			<img src="img/27.png" alt="">
+		</section>
+		<section class="banner">
+			<ul class="clearfix">
+				<li><img src="img/1.png" alt=""><a href="">订单</a></li>
+				<li><img src="img/2.png" alt=""><a href="">收藏</a></li>
+				<li><img src="img/3.png" alt=""><a href="">推荐</a></li>
+			</ul>
+		</section>
+		<section class="banner2">
+			<p class="clearfix"><a href="javascript:;" class="fl">修改个人资料</a><span class="fr">></span></p>
+			<p class="clearfix" style="border-bottom:none"><a href="javascript:;" class="fl">修改密码</a><span class="fr">></span></p>
+		</section>
+		<section class="banner2 banner3">
+			<p class="clearfix"><a href="javascript:;" class="fl">声音推送通知</a><span class="fr"><img src="img/4.png" alt=""></span></p>
+		</section>
+		<section class="banner2">
+			<p class="clearfix"><a href="javascript:;" class="fl">猜你喜欢</a><span class="fr">></span></p>
+			<p class="clearfix"><a href="javascript:;" class="fl">附近热门</a><span class="fr">></span></p>
+			<p class="clearfix"><a href="javascript:;" class="fl">推荐商家</a><span class="fr">></span></p>
+			<p class="clearfix" style="border-bottom:none"><a href="javascript:;" class="fl">设置</a><span class="fr">></span></p>
+		</section>
+		<footer class="foot">
+			<ul class="clearfix">
+				<li><img src="img/5.png" alt=""><div>首页</div></li>
+				<li><img src="img/6.png" alt=""><div>商家</div></li>
+				<li><img src="img/7.png" alt=""><div>购物车</div></li>
+				<li><img src="img/8.png" alt=""><div>个人中心</div></li>
+			</ul>
+		</footer>
+	</div>
+</body>
+</html>

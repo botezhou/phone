@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+	
+	<style>
+		*{margin: 0;padding: 0;list-style: none;}
+		.fl{ float:left; }
+		.fr{ float:right; }
+		.clear{ clear:both;}
+		.clearfix:after{ content:""; display:block; clear:both; }
+		.clearfix{ zoom:1; }
+		html{font-size: 20px;}
+		.wrap{width: 16rem;overflow: hidden;}
+		.wrap header{width:16rem;height:2.525rem;background: -webkit-linear-gradient(#f6f6f6,#ebebeb);position:relative;text-align: center;line-height: 2.525rem;}
+		.wrap header .a1{width:3.1rem;height:1.5rem;background: url(img/fh.png) no-repeat;background-size: 100%;position:absolute;left:0.5em;top:0.5em;}
+		.wrap header .a2{width:3.1rem;height:1.5rem;background: url(img/fl.png) no-repeat;background-size: 100%;position:absolute;right:0.5em;top:0.5em;}
+		.wrap header span{font-size: 0.63rem;font-weight: bold;}
+		.banner  ul{width: 16rem;}
+		.banner  ul li{float:left;border-left:1px solid #dcdcdc;border-bottom:1px solid #dcdcdc;width:4rem;height:2rem;text-align: center;line-height: 2rem;box-sizing:border-box;}
+		.banner ul li:nth-child(1){border-left:none;}
+		.banner ul li a{font-size: 0.5rem;text-decoration: none;color:#b2b2b2;}
+		.banner2{width: 16rem;}
+		.banner2 ul{width: 80rem;}
+		.banner2 ul li{float:left;width: 16rem;height:5.7rem;}
+		.banner2 ul li img{width: 100%;height:100%;}
+		.banner2 ol{width: 3.05rem;margin:0.4rem auto;}
+		.banner2 ol li{width:0.25rem;height: 0.25rem;background: #ccc;margin-left: 0.3rem;float:left;border-radius: 50%;}
+		.banner2 ol li.active{background: #333;}
+		.banner3 ul{width: 16rem;border-top: 1px solid #dcdcdc;padding:1rem 0;}
+
+		.banner3 ul li img{width: 1.975em;height:1.975rem;border-radius: 50%;margin-left: 0.825rem;}
+		.banner3 ul li div{margin-left: 1.25rem;font-size:0.55rem;color:#999999;}
+
+		.banner3 ul li div .p1{font-size: 0.825rem;font-weight: bold;color:#6a237f;margin-bottom: 0.5rem;}
+	</style>
+	<script>
+		;(function(win,doc){
+			var rem=20/320*doc.documentElement.clientWidth;
+			doc.documentElement.style.fontSize=rem+'px';
+			win.onresize=function(){
+				rem=20/320*doc.documentElement.clientWidth;
+				doc.documentElement.style.fontSize=rem+'px';
+			}
+		})(window,document);
+	</script>
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<a href="javascript:;" class="a1"></a>
+			<span>聚宝盆</span>
+			<a href="javascript:;" class="a2"></a>
+		</header>
+		<section class="banner">
+			<ul class="clearfix">
+				<li><a href="javascript" style="color:red">商品</a></li>
+				<li><a href="javascript">生活</a></li>
+				<li><a href="javascript">品牌</a></li>
+				<li><a href="javascript">聚宝盆</a></li>
+			</ul>
+		</section>
+		<section class="banner2">
+			<ul class="clearfix">
+				<li><img src="img/23.png" alt=""></li>
+				<li><img src="img/23.png" alt=""></li>
+				<li><img src="img/23.png" alt=""></li>
+				<li><img src="img/23.png" alt=""></li>
+				<li><img src="img/23.png" alt=""></li>
+			</ul>
+			<ol class="clearfix">
+				<li class="active"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ol>
+		</section>
+		<section class="banner3">
+			<ul>
+				<li class="clearfix">
+					<img src="img/24.png" alt="" class="fl">
+					<div class="fl">
+						<p class="p1">聚名品</p>
+						<p>轻奢购物第一站</p>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li class="clearfix">
+					<img src="img/25.png" alt="" class="fl">
+					<div class="fl">
+						<p class="p1" style="color:#9e5f44;">聚家装</p>
+						<p>轻奢购物第一站</p>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li class="clearfix">
+					<img src="img/26.png" alt="" class="fl">
+					<div class="fl">
+						<p class="p1" style="color:#81ac5e;">剧透</p>
+						<p>轻奢购物第一站</p>
+					</div>
+				</li>
+			</ul>
+		</section>
+	</div>
+</body>
+</html>

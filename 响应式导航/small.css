@@ -1,0 +1,5 @@
+.box{width: 150px;}
+ul{overflow: hidden;display: none;}
+.box a{display: block;}
+ul li{float: none;width:100%;}
+.box:hover ul{display:block;}

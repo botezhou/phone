@@ -1,0 +1,4 @@
+*{margin: 0;padding: 0;list-style: none;}
+ul{overflow: hidden;}
+ul li{width: 12.5%;height:50px;text-align: center;line-height: 50px;float:left;background: #ccc;border:1px solid #000;box-sizing:border-box;}
+.box a{display: none;}

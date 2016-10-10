@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+	<style>
+		*{margin: 0;padding: 0;list-style: none;}
+		html{font-size: 20px;}
+		.fl{ float:left; }
+		.fr{ float:right; }
+		.clear{ clear:both;}
+		.clearfix:after{ content:""; display:block; clear:both; }
+		.clearfix{ zoom:1; }
+		
+		.warp{width: 16rem;overflow: hidden;background:  #f0f0f0;}
+		header{width: 16rem;background: #f0f0f0;}
+		header .logo{width:4.15rem;height:1.25rem;background: url(img/logo.png) no-repeat;background-size:100%;text-indent: -99999999px;margin-top: 0.5rem;margin-left: 0.45rem; }
+		header ul{width: 5.2rem;height:1.25rem;margin-right: 0.825rem;margin-top: 0.5rem;}
+		header ul li{float:left;}
+		header ul li:nth-child(1){width:1.225rem;height:1.225rem;background: url(img/20.png) no-repeat;background-size:100%;}
+		header ul li:nth-child(2){width:1.55rem;height:1.225rem;background: url(img/21.png) no-repeat;background-size:100%;margin-left: 0.75rem;}
+		header ul li:nth-child(3){width:1.125rem;height:1.225rem;background: url(img/22.png) no-repeat;background-size:100%;float:right;}
+		.banner2{width: 16rem;margin-top: 0.5rem;overflow: hidden;position:relative;}
+		.banner2 ul{width: 96rem;}
+		.banner2 ul li{float:left;width: 16rem;height:6.25rem;}
+		.banner2 ul li img{width: 100%;height:100%;}
+		.banner2 ol{width: 5.05rem;position:absolute;left:5.4rem;top:5.65rem;}
+		.banner2 ol li{width:0.25rem;height: 0.25rem;background: #fff;margin-left: 0.5rem;float:left;border-radius: 50%;}
+		.banner2 ol li.active{background: #333;}
+		.download{width: 15.175rem;background:#fbb347;margin-left: 0.4rem;margin-top:0.5rem;font-size: 0.775rem;color:#fff;padding:0.3rem 0;}
+		.download img{width: 1.05rem;height: 0.775rem;margin-left: 0.4rem; padding-right: 0.3rem;}
+		.banner3{width: 16rem;margin-top: 0.5rem;}
+		.banner3 .search{width: 15rem;margin:0 auto;position:relative;}
+		.search input{width: 11.925rem;height:2rem;border:1px solid #fe9600;box-sizing:border-box;font-size: 0.725rem;text-indent: 1rem;color:#a7a7a7;}
+		.search a{background: url(img/24.png) no-repeat;background-size:100%;width:3.05rem;height:2rem;position:absolute;right:0;top:0;}
+		.banner4{width: 16rem;}
+		.banner4 ul{margin: 1.125rem auto;font-size: 0.625rem;width:11.925rem;height:0.675rem;color:#7d7d7d;}
+		.banner4 ul li{float:left;margin-left: 0.9rem;}
+		.banner5{width: 16rem;margin-top: 1.5rem;}
+		.banner5 ul{width: 14.75rem;margin:0 auto;}
+		.banner5 ul li{float:left;width: 3rem;height:3.9rem;text-align: center;margin-left:0.8rem; }
+		.banner5 ul li:nth-child(1){margin-left:0;}
+		.banner5 ul li img{width: 2.9rem;height:2.9rem;vertical-align: top;}
+		.banner5 ul li a{font-size: 0.55rem;text-decoration: none;color:#6b6b6b;margin-top: 0.3rem;}
+		.tj{width: 16rem;padding:0.4rem 0;background: #fe9600;margin-top: 1.45rem;}
+		.tj .s1{font-size: 0.75rem;margin-left:0.5rem;color:#fff;font-weight: bold;}
+		.tj .s2{font-size: 0.55rem;margin-left:0.4rem;color:#fff;}
+		.tj .s3{font-size: 0.55rem;margin-left:6rem;color:#fff;font-weight: bold;}
+		.banner6{width: 16rem;margin-top: 0.5rem;}
+		.banner6 div{width: 415.05rem;margin-left: 0.375rem;}
+		.banner6 div img{width: 7.25rem;height:7.25rem;vertical-align: top;}
+		.banner7{width: 16rem;margin-top: 0.5rem;}
+		.banner7 p{padding:0.5rem 0;width:15.125rem;margin-left: 0.5rem;border-top: 1px solid #fff;border-bottom: 1px solid #fff;color:#727272;}
+		.banner7 p .s1{font-size: 0.65rem;margin-left: 0.5rem;float:left;}
+		.banner7 p .s2{font-size: 0.5rem;margin-right: 0.5rem;color:#c32020;float:right;}
+		.banner8{width: 16rem;margin-top: 0.5rem;}
+		.banner8 p{background: #e50055;padding:0.5rem;width: 16rem;}
+		.banner8 p span{color:#fff;}
+		.banner8 p span:nth-child(1){margin-left: 0.5rem;font-size: 0.675rem;font-weight: bold;}
+		.banner8 p span:nth-child(2){margin-left: 0.5rem;font-size: 0.5rem;}
+		.banner8 p span:nth-child(3){margin-left: 5rem;font-size: 0.5rem;font-weight: bold;}
+		.banner8 img{vertical-align: top;width: 16rem;height:7.025rem;}
+		.banner9{width: 16rem;}
+		.banner9 ul{width: 16rem;}
+		.banner9 ul li{float:left;width:4.6rem;height: 1.45rem;background: #fff;font-size:0.625rem;margin-top: 0.5rem;margin-left: 0.55rem;text-align: center;line-height: 1.45rem;color:#6a6a6a; }
+        .banner10{margin-top: 1rem;}
+        .banner10 p .s2{color:#eca026;}
+        .banner11 ul li a{margin-top: 0.3rem;display:block;}
+
+        footer{background: #e0e0e0;margin-top: 1.25rem;padding-top:0.5rem;}
+        .banner12{margin-top: 0;}
+        .banner12 .search input{border:1px solid #b0b0b0;}
+        .banner12 .search a{background: url(img/33.png) no-repeat;background-size:100%;width:3.05rem;height:2rem;position:absolute;right:0;top:0;}
+        .banner13{width: 16rem;margin-top: 0.65rem;}
+        .banner13 ul{width: 13.8rem;margin:0 auto;}
+        .banner13 ul li{float:left;font-size: 0.75rem;margin-left:1.7rem;}
+        .banner13 ul:nth-child(2){margin-top: 0.95rem;}
+        .foot{width: 16rem;margin-top: 1.2rem;background: #b0b0b0;padding:0.4rem 0;color:#fff;font-size: 0.7rem;font-weight: bold;}
+        .foot .s1{margin-left: 0.75rem;}
+        .foot .s2{margin-left: 1.25rem;}
+        .foot .s3{margin-left: 7.425rem;}
+        .footer{width: 15.7rem;padding:0.4rem 0.3rem;color:#9f9f9f;font-size: 0.5rem;}
+	</style>
+	<script>
+		;(function(win,doc){
+			var rem=20/320*doc.documentElement.clientWidth;
+			doc.documentElement.style.fontSize=rem+'px';
+			window.onresize=function(){
+				rem=20/320*doc.documentElement.clientWidth;
+				doc.documentElement.style.fontSize=rem+'px';
+			}
+		})(window,document);
+	</script>
+</head>
+<body>
+	<div class="warp">
+		<header class="clearfix">
+			<a href="javascript:;" class="fl logo">当当网</a>
+			<ul class="fr">
+				<li><a href="javascript:;"></a></li>
+				<li><a href="javascript:;"></a></li>
+				<li><a href="javascript:;"></a></li>
+			</ul>
+		</header>
+		<section class="banner2">
+			<ul class="clearfix">
+				<li><img src="img/3.png" alt=""></li>
+				<li><img src="img/3.png" alt=""></li>
+				<li><img src="img/3.png" alt=""></li>
+				<li><img src="img/3.png" alt=""></li>
+				<li><img src="img/3.png" alt=""></li>
+				<li><img src="img/3.png" alt=""></li>
+			</ul>
+			<ol class="clearfix">
+				<li class="active"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ol>
+		</section>
+		<p class="download"><img src="img/23.png" alt=""><span>下载当当手机客户端即得5元代金劵</span></p>
+		<section class="banner3">
+			<div class="search">
+				<input type="text" value="唯品会">
+				<a href="javascript"></a>
+			</div>
+		</section>
+		<section class="banner4">
+			<ul class="clearfix">
+				<li>图书</li>
+				<li>母婴</li>
+				<li>童装</li>
+				<li>美妆</li>
+				<li>家具</li>
+			</ul>
+			<ul class="clearfix">
+				<li>图书</li>
+				<li>母婴</li>
+				<li>童装</li>
+				<li>美妆</li>
+				<li>家具</li>
+			</ul>
+		</section>
+		<section class="banner5">
+			<ul class="clearfix">
+				<li><img src="img/25.png" alt=""><a href="javascript">我的订单</a></li>
+				<li><img src="img/26.png" alt=""><a href="javascript">我的订单</a></li>
+				<li><img src="img/27.png" alt=""><a href="javascript">我的订单</a></li>
+				<li><img src="img/28.png" alt=""><a href="javascript">我的订单</a></li>
+			</ul>
+		</section>
+		<p class="tj">
+			<span class="s1">今日特价</span>
+			<span class="s2">挑战全网最低价</span>
+			<span class="s3">></span>
+		</p>
+		<section class="banner6">
+			<div>
+				<img src="img/8.png" alt="">
+				<img src="img/9.png" alt="">
+			</div>
+		</section>
+
+		<section class="banner7">
+			<p class="clearfix"><span class="s1">桌面迷你小太阳取暖器2档调</span><span class="s2">￥29.00</span></p>
+			<p class="clearfix"><span class="s1">桌面迷你小太阳取暖器2档调</span><span class="s2">￥69.90</span></p>
+		</section>
+		<section class="banner8">
+			<p class="clearfix">
+				<span class="s1">唯品会1-3折</span>
+				<span class="s2">名品清仓特卖</span>
+				<span class="s3">></span>
+			</p>
+			<img src="img/10.png" alt="">
+			<img src="img/11.png" alt="">
+			<img src="img/12.png" alt="">
+		</section>
+		<section class="banner9">
+			<ul class="clearfix">
+				<li>男装</li>
+				<li>女装</li>
+				<li>鞋</li>
+				<li>户外运动</li>
+				<li>箱包礼品</li>
+			</ul>
+		</section>
+		<section class="banner7 banner10">
+			<p class="clearfix"><span class="s1">亚都净化专场 全国包邮49折</span><span class="s2">2.3折</span></p>
+			<p class="clearfix"><span class="s1">亚都净化专场 全国包邮49折</span><span class="s2">3.0折</span></p>
+		</section>
+		<section class="banner5 banner11" style="font-size:0.5rem">
+			<ul class="clearfix">
+				<li><img src="img/29.png" alt=""><a href="javascript">手机充值</a></li>
+				<li><img src="img/30.png" alt=""><a href="javascript">元宝福利社</a></li>
+				<li><img src="img/31.png" alt=""><a href="javascript">当当客户端</a></li>
+				<li><img src="img/32.png" alt=""><a href="javascript">读书客户端</a></li>
+			</ul>
+		</section>
+		<footer>
+			<section class="banner3 banner12">
+				<div class="search">
+					<input type="text" value="请输入商品名称">
+					<a href="javascript"></a>
+				</div>
+			</section>
+			<section class="banner13">
+				<ul class="clearfix">
+					<li>精简版</li>
+					<li>触屏版</li>
+					<li>电脑版</li>
+				</ul>
+				<ul class="clearfix">
+					<li>提建议</li>
+					<li>客&nbsp服</li>
+					<li>帮助</li>
+				</ul>
+			</section>
+			<p class="foot">
+				<span class="s1">注册</span>
+				<span class="s2">登录</span>
+				<span class="s3">↑TOP</span>
+			</p>
+			<p class="footer"> 温馨提示:本信息仅提供演示方便链接, 与原网站无关！</p>
+		</footer>
+	</div>
+</body>
+</html>
